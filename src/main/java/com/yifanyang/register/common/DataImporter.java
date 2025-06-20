@@ -76,9 +76,10 @@ public class DataImporter {
     /**
      * @param items The items available for sale at the grocery store
      * @return The discount list that contains all the spend-and-save discounts.
-     * Meanwhile, all item discounts are added into the input items map
-     * Note that a per-item item discount will be ignored if the corresponding item in the map is per-kg
-     * Note that an item discount will be ignored if the corresponding item is not in the map
+     *
+     * All item discounts are added into the input items map
+     * Note that an item-level discount will be ignored if the corresponding item is not in the map
+     * Note that an item-level discount will be ignored if the corresponding item in the map is per-kg
      */
     public List<DiscountSpendAndSave> importDiscount(Map<Integer, Item> items) {
 

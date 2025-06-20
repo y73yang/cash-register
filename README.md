@@ -59,7 +59,7 @@ The application requires three CSV files:
     - The spend-and-save discounts will be applied **after** the item-level discounts.
 
 - **Data validation & rules**:
-    - A per-item discount will be **ignored** if the item is **sold per kg**.
+    - An item-level discount will be **ignored** if the item is **sold per kg**.
     - Discounts and shopping items are **ignored** if their corresponding `item_id` is **not found** in the item list.
     - A shopping item will be **ignored** if it has a **non-integer quantity** while the item is measured by `each`.
     - Invalid entries in any input file are safely **ignored** during import. See `DataImporter` and `InputValidator` classes for logic details.
